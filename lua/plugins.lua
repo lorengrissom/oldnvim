@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
   use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'honza/vim-snippets'
+  --use 'sirVer/ultisnips'
   use 'L3MON4D3/LuaSnip'
   use { 'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use 'steelsojka/pears.nvim'

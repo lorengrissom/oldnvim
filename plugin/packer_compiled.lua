@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
-  ["lexima.vim"] = {
-    loaded = true,
-    path = "/home/loren/.local/share/nvim/site/pack/packer/start/lexima.vim",
-    url = "https://github.com/cohama/lexima.vim"
-  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
