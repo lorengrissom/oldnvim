@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope-media-files.nvim'
   use 'onsails/lspkind-nvim'
   use 'norcalli/nvim-colorizer.lua'
-  use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
+  --use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'honza/vim-snippets'
   use 'sirVer/ultisnips'

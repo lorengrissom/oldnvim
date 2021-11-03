@@ -74,6 +74,41 @@ _G.packer_plugins = {
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-look"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp-look",
+    url = "https://github.com/hrsh7th/cmp-look"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -178,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/sirVer/ultisnips"
   },
   ["vim-fugitive"] = {
     loaded = true,
