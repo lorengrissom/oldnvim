@@ -35,6 +35,18 @@ end
 
 require'lspconfig'.pyright.setup{}
 
+local cmp_lsp = require 'cmp_nvim_lsp'
+
+nvim_lsp.vimls.setup {
+  capabilities =
+  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+}
+nvim_lsp.tsserver.setup {
+  capabilities =
+  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local servers = { 'pyright', 'rust_analyzer', 'tsserver' }
