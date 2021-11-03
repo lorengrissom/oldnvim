@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["galaxyline.nvim"] = {
-    loaded = true,
-    path = "/home/loren/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
-    url = "https://github.com/glepnir/galaxyline.nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -105,9 +100,8 @@ _G.packer_plugins = {
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/loren/.local/share/nvim/site/pack/packer/opt/lualine.nvim",
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-bufferline.lua"] = {
@@ -159,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["pears.nvim"] = {
+    loaded = true,
+    path = "/home/loren/.local/share/nvim/site/pack/packer/start/pears.nvim",
+    url = "https://github.com/steelsojka/pears.nvim"
   },
   playground = {
     loaded = true,

@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
-  use 'cohama/lexima.vim'
+  --use 'cohama/lexima.vim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'
@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
   use 'honza/vim-snippets'
   use 'L3MON4D3/LuaSnip'
   use { 'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons' }
+  use 'steelsojka/pears.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

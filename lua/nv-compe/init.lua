@@ -65,6 +65,16 @@ _G.s_tab_complete = function()
   end
 end
 
+require "pears".setup(function(conf)
+  conf.on_enter(function(pears_handle)
+    if vim.fn.pumvisible() == 1 and vim.fn.complete_info().selected ~= -1 then
+      return vim.fn["compe#confirm"]("<CR>")
+    else
+      pears_handle()
+    end
+  end)
+end)
+
 vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
