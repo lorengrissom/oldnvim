@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'
-  use 'glepnir/galaxyline.nvim'
+  -- use 'glepnir/galaxyline.nvim'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim'}
@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'honza/vim-snippets'
   use 'L3MON4D3/LuaSnip'
+  use { 'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
