@@ -41,7 +41,8 @@ return require('packer').startup(function(use)
   use 'sirVer/ultisnips'
   use 'L3MON4D3/LuaSnip'
   use { 'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons' }
-  use 'steelsojka/pears.nvim'
+  --use 'steelsojka/pears.nvim'
+  use 'windwp/nvim-autopairs'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

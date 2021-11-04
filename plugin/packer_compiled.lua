@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nvim-bufferline.lua"] = {
-    loaded = true,
-    path = "/home/loren/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
-    url = "https://github.com/akinsho/nvim-bufferline.lua"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -183,11 +178,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/loren/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["pears.nvim"] = {
-    loaded = true,
-    path = "/home/loren/.local/share/nvim/site/pack/packer/start/pears.nvim",
-    url = "https://github.com/steelsojka/pears.nvim"
   },
   playground = {
     loaded = true,
