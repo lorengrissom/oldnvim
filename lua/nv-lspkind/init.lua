@@ -14,7 +14,7 @@ require('lspkind').init({
 
     -- override preset symbols
     --
-    -- default: {}
+    --default: {}
     symbol_map = {
       Text = " Text",
       Method = " Method",
@@ -49,14 +49,15 @@ cmp.setup({
       --vim_item.kind = 'kind'
       --vim_item.menu = 'menu'
 
-      vim_item.kind = lspkind.presets.default[vim_item.kind]
+      vim_item.kind = lspkind.presets.codicons[vim_item.kind]
       vim_item.menu = ({
       nvim_lsp = "[LSP]",
       look = "[Dict]",
       buffer = "[Buffer]",
       nvim_lua = "[Api]",
-      luasnip = "[Snip]",
+      luasnip = "[LuaSnip]",
       gh_issues = "[Issues]",
+      vsnip = "[vsnip]",
       nvim = "[CMD]"
       })[entry.source.name]
       return vim_item
