@@ -57,7 +57,8 @@ cmp.setup({
         buffer = "[Buffer]",
         nvim_lua = "[Api]",
         luasnip = "[Snip]",
-        gh_issues = "[Issues]"
+        gh_issues = "[Issues]",
+        nvim = "[CMD]"
       })[entry.source.name]
       return vim_item
     end
