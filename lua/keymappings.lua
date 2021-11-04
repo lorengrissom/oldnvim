@@ -29,3 +29,10 @@ vim.api.nvim_set_keymap('i', 'kk', '<ESC>', { noremap = true, silent = true })
 -- Move selected line / block of text in visual mode
 vim.api.nvim_set_keymap('x', 'K', ':move \'<-2<CR>gv-gv\'', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv\'', { noremap = true, silent = true })
+
+-- Lspsaga
+vim.api.nvim_set_keymap('n', 'gf', ':Lspsaga lsp_finder<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'dn', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'gs', ':Lspsaga signature_help<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-d>', ':Lspsaga open_floaterm<CR>', { noremap = true, silent = true })

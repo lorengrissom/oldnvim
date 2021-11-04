@@ -1,8 +1,7 @@
--- add your config value here
--- default value
--- use_saga_diagnostic_sign = true
-require 'lspsaga'.init_lsp_saga{
- error_sign = '',
+-- code
+local saga = require('lspsaga')
+.init_lsp_saga{
+error_sign = '',
  warn_sign = '',
  hint_sign = '',
  infor_sign = '',
@@ -36,8 +35,4 @@ finder_reference_icon = '  ',
 -- like server_filetype_map = {metals = {'sbt', 'scala'}}
  server_filetype_map = {}
 }
-
-vim.cmd([[nnoremap <silent> <C-j> :Lspsaga diagnostic_jump_next<CR>]])
-vim.cmd([[nnoremap <silent> gh :Lspsaga lsp_finder<CR>]])
-vim.cmd([[nnoremap <silent> gs :Lspsaga signature_help<CR>]])
 vim.cmd([[nnoremap <silent>K :Lspsaga hover_doc<CR>]])
