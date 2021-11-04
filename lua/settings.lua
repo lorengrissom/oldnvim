@@ -85,6 +85,9 @@ opt.smarttab = true
 opt.autoindent = true
 opt.laststatus = 2
 
+-- luasnip start
+vim.g.snippets = "luasnip"
+
 -- don't auto commenting new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 

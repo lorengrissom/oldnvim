@@ -1,9 +1,8 @@
 local cmp = require 'cmp'
 local lspkind = require 'lspkind'
 require('lspkind').init({
-    -- enables text annotations
-    --
-    -- default: true
+    --enables text annotations
+    --default: true
     with_text = true,
 
     -- default symbol map
@@ -17,30 +16,30 @@ require('lspkind').init({
     --
     -- default: {}
     symbol_map = {
-      Text = "",
-      Method = "",
-      Function = "",
-      Constructor = "",
-      Field = "ﰠ",
-      Variable = "",
-      Class = "ﴯ",
-      Interface = "",
-      Module = "",
-      Property = "ﰠ",
-      Unit = "塞",
-      Value = "",
-      Enum = "",
-      Keyword = "",
-      Snippet = "",
-      Color = "",
-      File = "",
-      Reference = "",
-      Folder = "",
-      EnumMember = "",
-      Constant = "",
-      Struct = "פּ",
-      Event = "",
-      Operator = "",
+      Text = " Text",
+      Method = " Method",
+      Function = " Function",
+      Constructor = " Constructor",
+      Field = "ﰠ Field",
+      Variable = " Variable",
+      Class = "ﴯ Class",
+      Interface = " Interface",
+      Module = " Module",
+      Property = "ﰠ Property",
+      Unit = "塞Unit",
+      Value = " Value",
+      Enum = " Enum",
+      Keyword = " Keyword",
+      Snippet = " Snippet",
+      Color = " Color",
+      File = " File",
+      Reference = " Reference",
+      Folder = " Folder",
+      EnumMember = " EnumMember",
+      Constant = " Constant",
+      Struct = "פּ Struct",
+      Event = " Event",
+      Operator = " Operator",
       TypeParameter = ""
     },
 })
@@ -52,13 +51,13 @@ cmp.setup({
 
       vim_item.kind = lspkind.presets.default[vim_item.kind]
       vim_item.menu = ({
-        nvim_lsp = "[LSP]",
-        look = "[Dict]",
-        buffer = "[Buffer]",
-        nvim_lua = "[Api]",
-        luasnip = "[Snip]",
-        gh_issues = "[Issues]",
-        nvim = "[CMD]"
+      nvim_lsp = "[LSP]",
+      look = "[Dict]",
+      buffer = "[Buffer]",
+      nvim_lua = "[Api]",
+      luasnip = "[Snip]",
+      gh_issues = "[Issues]",
+      nvim = "[CMD]"
       })[entry.source.name]
       return vim_item
     end
