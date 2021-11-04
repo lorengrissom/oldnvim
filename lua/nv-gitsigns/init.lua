@@ -2,8 +2,8 @@ require('gitsigns').setup {
   signs = {
     add          = {hl = 'GitSignsAdd'   , text = '▎', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
     change       = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-    delete       = {hl = 'GitSignsDelete', text = '契', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    topdelete    = {hl = 'GitSignsDelete', text = '契', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+    delete       = {hl = 'GitSignsDelete', text = '↭', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+    topdelete    = {hl = 'GitSignsDelete', text = '↭', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
     changedelete = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
   },
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
@@ -27,6 +27,8 @@ require('gitsigns').setup {
     ['n <leader>hb'] = '<cmd>lua require"gitsigns".blame_line(true)<CR>',
     ['n <leader>hS'] = '<cmd>lua require"gitsigns".stage_buffer()<CR>',
     ['n <leader>hU'] = '<cmd>lua require"gitsigns".reset_buffer_index()<CR>',
+
+-- delete
 
     -- Text objects
     ['o ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
