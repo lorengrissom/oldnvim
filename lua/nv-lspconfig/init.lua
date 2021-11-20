@@ -39,23 +39,42 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
---require'lspconfig'.pyright.setup{}
---
---local cmp_lsp = require 'cmp_nvim_lsp'
---
---nvim_lsp.vimls.setup {
---  capabilities =
---  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
---
---}
---nvim_lsp.tsserver.setup {
---  capabilities =
---  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
---}
+-- language-servers
+require'lspconfig'.pyright.setup{}
+
+local cmp_lsp = require 'cmp_nvim_lsp'
+
+nvim_lsp.vimls.setup {
+  capabilities =
+  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
+
+nvim_lsp.tsserver.setup {
+  capabilities =
+  cmp_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities())
+}
+
+nvim_lsp.rust_analyzer.setup({
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importGranularity = "module",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'rust_analyzer', 'tsserver' }
+local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'rust_analyzer'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

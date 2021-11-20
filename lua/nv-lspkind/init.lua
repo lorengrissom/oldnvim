@@ -58,7 +58,8 @@ cmp.setup({
       luasnip = "[LuaSnip]",
       gh_issues = "[Issues]",
       vsnip = "[vsnip]",
-      nvim = "[CMD]"
+      nvim = "[CMD]",
+      path = "[Path]"
       })[entry.source.name]
       return vim_item
     end

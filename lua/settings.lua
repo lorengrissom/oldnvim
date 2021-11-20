@@ -98,7 +98,7 @@ cmd [[autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0]]
 cmd [[
   autocmd FileType xml,html,xhtml,css,scss,javascript,lua,yaml setlocal shiftwidth=2 tabstop=2
 ]]
-
+g.UltiSnipsExpandTrigger="<c-i>"
 -- IndentLine
 --g.indentLine_setColors = 0  -- set indentLine color
 g.indentLine_char = '|'       -- set indentLine character
@@ -117,6 +117,9 @@ cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
 -----------------------------------------------------------
 -- open a terminal pane on the right using :Term
 cmd [[command Term :botright vsplit term://$SHELL]]
+
+-- Rust
+cmd [[let g:rust_clip_command = 'xclip -selection clipboard']]
 
 -- Terminal visual tweaks
 --- enter insert mode when switching to terminal
